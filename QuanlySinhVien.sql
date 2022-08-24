@@ -29,5 +29,5 @@ Mark float default 0 check(Mark between 0 and 100),
 ExamTimes tinyint default 1,
 unique (SubId, StudentId),
 foreign key(SubId) references Subject(SubId),
-foreign key(studentId) classreferences Student (StudentId)
+foreign key(studentId) references Student (StudentId)
 );
